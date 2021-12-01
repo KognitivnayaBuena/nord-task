@@ -1,0 +1,80 @@
+.serversList__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.serversList__title {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 5px;
+  padding-right: 30px;
+  background: #fff;
+  border: 2px solid #4687ff;
+  border-radius: 0 0 10px 10px;
+  text-align: left;
+}
+
+.serversList__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+}
+
+.serversList__button::after {
+  position: absolute;
+  right: -20px;
+  display: block;
+  width: 10px;
+  height: 10px;
+  content: "";
+  border-top: 2px solid #4687ff;
+  border-right: 2px solid #4687ff;
+}
+
+.serversList__button_down::after {
+  transform: rotate(135deg);
+}
+
+.serversList__button_up::after {
+  transform: rotate(-45deg);
+}
+
+.serversList_rebutButton {
+  height: 40px;
+  background-color: #fff;
+  border: 2px solid #4687ff;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.serversList__button:first-child {
+  padding-left: 10px;
+}
+
+.serversList {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  list-style-type: none;
+}
+
+.serversList__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #4687ff;
+  border-radius: 10px;
+  text-align: left;
+}
